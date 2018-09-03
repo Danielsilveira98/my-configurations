@@ -1,0 +1,64 @@
+{
+  "files.autoSave": "off",
+  "editor.tabSize": 2,
+  "git.ignoreLegacyWarning": true,
+  "git.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80
+  ],
+  "explorer.autoReveal": false,
+  "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#FF4081",
+    "list.activeSelectionForeground": "#FF4081",
+    "list.inactiveSelectionForeground": "#FF4081",
+    "list.highlightForeground": "#FF4081",
+    "scrollbarSlider.activeBackground": "#FF408150",
+    "editorSuggestWidget.highlightForeground": "#FF4081",
+    "textLink.foreground": "#FF4081",
+    "progressBar.background": "#FF4081",
+    "pickerGroup.foreground": "#FF4081",
+    "tab.activeBorder": "#FF4081",
+    "notificationLink.foreground": "#FF4081",
+    "editorWidget.resizeBorder": "#FF4081",
+    "editorWidget.border": "#FF4081",
+    "settings.modifiedItemForeground": "#FF4081",
+    "panelTitle.activeBorder": "#FF4081"
+  },
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": -1,
+  "explorer.confirmDelete": false,
+  "[json]": {},
+  "explorer.confirmDragAndDrop": false,
+  "gitProjectManager.baseProjectsFolders": [
+    "/home/daniel/Workfolder"
+  ],
+  "gitProjectManager.ignoredFolders": [
+    "node_modules",
+    "bower_components",
+    "vendor"
+  ],
+  "gitProjectManager.maxDepthRecursion": 1,
+  "materialTheme.fixIconsRunning": false,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "materialTheme.autoApplyIcons": false,
+  "solargraph.definitions": false,
+  "ruby.lint": {
+    "rubocop": false
+  },
+  "ruby.intellisense": "rubyLocate",
+  "ruby.locate": {
+    "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
+    "include": "**/**/*.rb"
+  },
+  "materialTheme.accent": "Pink",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
+}
