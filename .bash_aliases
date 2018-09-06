@@ -9,11 +9,12 @@ alias dkex='docker exec -it '
 # Git
 alias g='git '
 alias gall='git add -A '
-alias commit='git commit -m '
+alias gadd='git add '
+alias gcommit='git commit -m '
 alias gstatus='git status'
 alias gcam='git commit -am '
-alias pull='git pull origin'
-alias push='git push origin '
+alias gpull='git pull origin'
+alias gpush='git push origin '
 
 # Fix comand
 alias sl='ls'
