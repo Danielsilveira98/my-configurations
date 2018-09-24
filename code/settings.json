@@ -14,21 +14,26 @@
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#FF4081",
-    "list.activeSelectionForeground": "#FF4081",
-    "list.inactiveSelectionForeground": "#FF4081",
-    "list.highlightForeground": "#FF4081",
-    "scrollbarSlider.activeBackground": "#FF408150",
-    "editorSuggestWidget.highlightForeground": "#FF4081",
-    "textLink.foreground": "#FF4081",
-    "progressBar.background": "#FF4081",
-    "pickerGroup.foreground": "#FF4081",
-    "tab.activeBorder": "#FF4081",
-    "notificationLink.foreground": "#FF4081",
-    "editorWidget.resizeBorder": "#FF4081",
-    "editorWidget.border": "#FF4081",
-    "settings.modifiedItemForeground": "#FF4081",
-    "panelTitle.activeBorder": "#FF4081"
+    "activityBarBadge.background": "#00BCD4",
+    "list.activeSelectionForeground": "#00BCD4",
+    "list.inactiveSelectionForeground": "#00BCD4",
+    "list.highlightForeground": "#00BCD4",
+    "scrollbarSlider.activeBackground": "#00BCD450",
+    "editorSuggestWidget.highlightForeground": "#00BCD4",
+    "textLink.foreground": "#00BCD4",
+    "progressBar.background": "#00BCD4",
+    "pickerGroup.foreground": "#00BCD4",
+    "tab.activeBorder": "#00BCD4",
+    "notificationLink.foreground": "#00BCD4",
+    "editorWidget.resizeBorder": "#00BCD4",
+    "editorWidget.border": "#00BCD4",
+    "settings.modifiedItemForeground": "#00BCD4",
+    "panelTitle.activeBorder": "#00BCD4",
+    "settings.modifiedItemIndicator": "#00BCD4",
+    "settings.headerForeground": "#00BCD4",
+    "breadcrumb.activeSelectionForeground": "#00BCD4",
+    "menu.selectionForeground": "#00BCD4",
+    "menubar.selectionForeground": "#00BCD4"
   },
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": -1,
@@ -48,7 +53,7 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "materialTheme.autoApplyIcons": false,
+  "materialTheme.autoApplyIcons": true,
   "solargraph.definitions": false,
   "ruby.lint": {
     "rubocop": false
@@ -58,7 +63,7 @@
     "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
     "include": "**/**/*.rb"
   },
-  "materialTheme.accent": "Pink",
+  "materialTheme.accent": "Cyan",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true
 }

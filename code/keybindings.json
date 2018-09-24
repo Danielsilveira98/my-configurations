@@ -368,11 +368,11 @@
         "command": "workbench.action.moveEditorToRightGroup"
     },
     {
-        "key": "ctrl+k up",
+        "key": "ctrl+k ctrl+up",
         "command": "workbench.action.moveEditorToAboveGroup"
     },
     {
-        "key": "ctrl+k down",
+        "key": "ctrl+k ctrl+down",
         "command": "workbench.action.moveEditorToBelowGroup"
     },
     {
@@ -424,5 +424,33 @@
         "key": "ctrl+shift+g g",
         "command": "-workbench.view.scm",
         "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+f12",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+h ctrl+f",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+h ctrl+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+k up",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+up",
+        "command": "-workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k down",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "-workbench.action.focusBelowGroup"
     }
 ]
