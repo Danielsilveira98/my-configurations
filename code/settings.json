@@ -9,7 +9,7 @@
   ],
   "explorer.autoReveal": false,
   "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
@@ -27,7 +27,6 @@
     "notificationLink.foreground": "#00BCD4",
     "editorWidget.resizeBorder": "#00BCD4",
     "editorWidget.border": "#00BCD4",
-    "settings.modifiedItemForeground": "#00BCD4",
     "panelTitle.activeBorder": "#00BCD4",
     "settings.modifiedItemIndicator": "#00BCD4",
     "settings.headerForeground": "#00BCD4",
@@ -49,12 +48,10 @@
     "vendor"
   ],
   "gitProjectManager.maxDepthRecursion": 1,
-  "materialTheme.fixIconsRunning": false,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
   "materialTheme.autoApplyIcons": true,
-  "solargraph.definitions": false,
   "ruby.lint": {
     "rubocop": false
   },
@@ -65,5 +62,9 @@
   },
   "materialTheme.accent": "Cyan",
   "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "extensions.ignoreRecommendations": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "ruby.codeCompletion": "rcodetools"
 }
