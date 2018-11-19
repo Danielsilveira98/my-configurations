@@ -416,7 +416,7 @@
         "command": "-workbench.action.focusRightGroup"
     },
     {
-        "key": "ctrl+shift+g",
+        "key": "ctrl+k ctrl+g",
         "command": "workbench.view.scm",
         "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
     },
@@ -452,5 +452,19 @@
     {
         "key": "ctrl+k ctrl+down",
         "command": "-workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+shift+g p",
+        "command": "pr.openPullRequestInGitHub"
+    },
+    {
+        "key": "ctrl+shift+alt+3",
+        "command": "auto.addBracketsHashtag",
+        "when": "editorTextFocus && editorLangId == 'ruby' && (vim.mode != ''' ? vim.mode == 'Insert' : true)'"
+    },
+    {
+        "key": "shift+3",
+        "command": "-auto.addBracketsHashtag",
+        "when": "editorTextFocus && editorLangId == 'ruby' && (vim.mode != ''' ? vim.mode == 'Insert' : true)'"
     }
 ]

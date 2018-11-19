@@ -8,10 +8,8 @@
     80
   ],
   "explorer.autoReveal": false,
-  "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#00BCD4",
@@ -53,7 +51,7 @@
   },
   "materialTheme.autoApplyIcons": true,
   "ruby.lint": {
-    "rubocop": false
+    "rubocop": true
   },
   "ruby.intellisense": "rubyLocate",
   "ruby.locate": {
@@ -66,5 +64,25 @@
   "extensions.ignoreRecommendations": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
-  "ruby.codeCompletion": "rcodetools"
+  "ruby.codeCompletion": "rcodetools",
+  "githubPullRequests.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "gitlens.historyExplorer.enabled": false,
+  "breadcrumbs.enabled": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/*.json"
+      ],
+      "url": "http://json-schema.org/draft-04/schema#"
+    }
+  ],
+  "breadcrumbs.filePath": "off",
+  "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}"
 }
