@@ -30,6 +30,10 @@ alias hulk='ssh dito@hulk'
 alias ozy='ssh dito@ozymandias'
 alias spider='ssh dito@spiderman'
 alias green='ssh dito@green-lantern'
+alias kickass='ssh dito@kickass'
+alias wolwerine='ssh dito@wolwerine'
+alias sabretooth='ssh dito@sabretooth'
+alias jaspion='ssh dito@jaspion'
 
 # Docker compose
 alias dkc='docker-compose'
