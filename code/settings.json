@@ -72,5 +72,6 @@
   "gitlens.views.fileHistory.enabled": false,
   "gitlens.views.lineHistory.enabled": false,
   "breadcrumbs.enabled": true,
-  "window.titleBarStyle": "native"
+  "window.titleBarStyle": "native",
+  "gitlens.mode.active": "review"
 }

@@ -129,10 +129,6 @@
         "when": "inDebugMode"
     },
     {
-        "key": "ctrl+t",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
         "key": "ctrl+shift+oem_plus",
         "command": "workbench.action.toggleMaximizedPanel"
     },
@@ -416,11 +412,6 @@
         "command": "-workbench.action.focusRightGroup"
     },
     {
-        "key": "ctrl+k ctrl+g",
-        "command": "workbench.view.scm",
-        "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
         "key": "ctrl+shift+g g",
         "command": "-workbench.view.scm",
         "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
@@ -466,5 +457,27 @@
         "key": "shift+3",
         "command": "-auto.addBracketsHashtag",
         "when": "editorTextFocus && editorLangId == 'ruby' && (vim.mode != ''' ? vim.mode == 'Insert' : true)'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "git.viewHistory"
+    },
+    {
+        "key": "ctrl+k ctrl+g",
+        "command": "workbench.view.scm",
+        "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+g g",
+        "command": "-workbench.view.scm",
+        "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.focusFilesExplorer"
     }
 ]
