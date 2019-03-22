@@ -463,10 +463,6 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+k ctrl+l",
-        "command": "git.viewHistory"
-    },
-    {
         "key": "ctrl+k ctrl+g",
         "command": "workbench.view.scm",
         "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
@@ -479,5 +475,21 @@
     {
         "key": "ctrl+shift+e",
         "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "workbench.action.focusPanel"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousPanelView"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextPanelView"
     }
 ]

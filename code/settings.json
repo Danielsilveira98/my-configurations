@@ -10,7 +10,7 @@
   "explorer.autoReveal": false,
   "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#00BCD4",
     "list.activeSelectionForeground": "#00BCD4",
@@ -33,7 +33,7 @@
     "menubar.selectionForeground": "#00BCD4"
   },
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "explorer.confirmDelete": false,
   "[json]": {},
   "explorer.confirmDragAndDrop": false,
@@ -73,5 +73,14 @@
   "gitlens.views.lineHistory.enabled": false,
   "breadcrumbs.enabled": true,
   "window.titleBarStyle": "native",
-  "gitlens.mode.active": "review"
+  "gitlens.mode.active": "review",
+  "sync.gist": "93f58a63806dd0599484099e334b4765",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "vs-kubernetes": {
+    "vs-kubernetes.helm-path": "/home/daniel/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.minikube-path": "/home/daniel/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.draft-path": "/home/daniel/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "ruby.rubocop.executePath": "./"
 }
