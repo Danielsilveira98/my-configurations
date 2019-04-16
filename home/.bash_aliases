@@ -1,8 +1,10 @@
 # Basic
 alias ..='cd ..'
 alias pg='sudo -u postgres'
-alias .="nautilus ."
-alias vinicius="vi"
+alias .='pcmanfm .'
+alias vinicius='vim'
+alias vi='vim'
+alias lsa='ls -la'
 
 # Docker
 alias dps='docker ps '
@@ -26,6 +28,9 @@ alias gti='git'
 alias sduo='sudo'
 alias suod='sudo'
 
+# Docker compose
+alias dkc='docker-compose'
+
 # Dito servers
 alias hulk='ssh dito@hulk'
 alias ozy='ssh dito@ozymandias'
@@ -34,7 +39,4 @@ alias green='ssh dito@green-lantern'
 alias kickass='ssh dito@kickass'
 alias wolwerine='ssh dito@wolwerine'
 alias sabretooth='ssh dito@sabretooth'
-alias jaspion='ssh dito@jaspion'
-
-# Docker compose
-alias dkc='docker-compose'
+alias jaspion='ssh dito@jaspion
