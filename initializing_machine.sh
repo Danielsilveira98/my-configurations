@@ -89,6 +89,7 @@ stow home -R
 
 echo 'Removing original vi'
 yay -R vi --noconfirm
-
-
 echo 'DONE !'
+
+echo 'restarting...'
+shutdown -r 0
