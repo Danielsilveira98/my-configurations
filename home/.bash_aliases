@@ -40,3 +40,14 @@ alias kickass='ssh dito@kickass'
 alias wolwerine='ssh dito@wolwerine'
 alias sabretooth='ssh dito@sabretooth'
 alias jaspion='ssh dito@jaspion
+
+# Kubernetes
+alias kbc='kubectl'
+alias kbcgj='kubectl get jobs'
+alias kbcgp='kubectl get pods'
+alias kbcec='kubectl edit cronjob'
+alias kbced='kubectl edit deployment'
+alias kbcl='kubectl logs'
+alias kbclf='kubectl logs -f'
+alias kbcecm='kubectl edit config-map'
+alias kbcesc='kubectl edit secret'
