@@ -1,91 +1,93 @@
-echo 'Update system'
+echo '---> Update system'
 sudo pacman -Syu --noconfirm
 
-echo 'cd to /tmp to install new package manager (yay)'
+echo '------> cd to /tmp to install new package manager (yay)'
 cd /tmp
 
-echo 'downloading yay'
+echo '------> downloading yay'
 git clone https://aur.archlinux.org/yay.git
 
-echo 'instaling yay'
+echo '------> instaling yay'
 cd yay
 makepkg -si --noconfirm
 
-echo 'Install fonts'
+echo '---> Install fonts'
 yay -S community/otf-fira-code --noconfirm
 
-echo 'Install Stow'
+echo '---> Install Stow'
 yay -S community/stow --noconfirm
 
-echo 'Instaling my prograns'
-echo 'Instaling pacman prograns'
-echo '- pywal'
+echo '---> Instaling my prograns'
+echo '---> Instaling pacman prograns'
+echo '---> - pywal'
 yay -S community/python-pywal --noconfirm
-echo '- firefox'
+echo '---> - firefox'
 yay -S extra/firefox --noconfirm
-echo '- chromiun'
+echo '---> - chromiun'
 yay -S extra/chromium --noconfirm
-echo '- terminator'
+echo '---> - terminator'
 yay -S community/terminator --noconfirm
-echo '- docker'
+echo '---> - docker'
 yay -S community/docker --noconfirm
-echo '- docker-compose'
+echo '---> - docker-compose'
 yay -S community/docker-compose --noconfirm
-echo '- go (golang)'
+echo '---> - go (golang)'
 yay -S community/go --noconfirm
-echo '- vim'
+echo '---> - vim'
 yay -S extra/vim --noconfirm
 
-echo 'Instaling aur prograns'
-echo '- ulauncher'
+echo '---> Instaling aur prograns'
+echo '---> - ulauncher'
 yay -S aur/ulauncher --noconfirm
-echo '- gotop'
+echo '---> - gotop'
 yay -S aur/gotop-bin --noconfirm
-echo '- vscode'
+echo '---> - vscode'
 yay -S aur/visual-studio-code-bin --noconfirm
-echo '- spotify'
+echo '---> - spotify'
 yay -S aur/spotify --noconfirm
-echo '- nvm (node version management)'
+echo '---> - nvm (node version management)'
 yay -S aur/nvm --noconfirm
 
 if [ ! -z "$1" ] && [ $1 = "work" ]; then
-  echo 'Instaling work prograns (pacman)'
-  echo '- dbeaver'
+  echo '---> Instaling work prograns (pacman)'
+  echo '---> - dbeaver'
   yay -S community/dbeaver --noconfirm
-  echo '- filezilla'
+  echo '---> - filezilla'
   yay -S community/filezilla --noconfirm
-  echo '- s3cmd'
+  echo '---> - s3cmd'
   yay -S community/s3cmd --noconfirm
-  echo '- google-cloud-sdk'
+  echo 'v- google-cloud-sdk'
   yay -S aur/google-cloud-sdk --noconfirm
-  echo '- rvm (ruby version management)'
+  echo '---> - rvm (ruby version management)'
   yay -S aur/rvm --noconfirm
-  echo '- google chrome'
+  echo '---> - google chrome'
   yay -S aur/google-chrome --noconfirm
 
-  echo 'Instaling work prograns (aur)'
-  echo '- slack'
+  echo '---> Instaling work prograns (aur)'
+  echo '---> - slack'
   yay -S aur/slack --noconfirm
 fi
 
-echo 'Back to path'
-echo 'Confing environment'
-echo 'cd into our my configurations dir'
+echo '---> Back to path'
+echo '---> Confing environment'
+echo '------> cd into our my configurations dir'
 cd "$HOME/my-configurations"
 
-echo 'attempt to stow adopting files'
+echo '------> attempt to stow adopting files'
 stow home --adopt
 
-echo 'reset changes made by adopting'
+echo '------> reset changes made by adopting'
 git reset --hard
 
-echo 'now we can stow things!'
+echo '-----> now we can stow things!'
 stow home -R
 
+echo '-----> add bash aliases on bashrc'
+echo '. ~/.bash_aliases' >> $HOME/.bashrc
 
-echo 'Removing original vi'
+echo '---> Removing original vi'
 yay -R vi --noconfirm
-echo 'DONE !'
+echo '---> DONE !'
 
 echo 'restarting...'
 shutdown -r 0
