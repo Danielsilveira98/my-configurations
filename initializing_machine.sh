@@ -1,9 +1,5 @@
-echo 'Update pacman mirrons'
-sudo pacman-mirrors -f --noconfirm
-echo 'optimizar mirrors'
-sudo pacman-mirrors -g --noconfirm
 echo 'Update system'
-sudo pacman -Syyuu --noconfirm
+sudo pacman -Syu --noconfirm
 
 echo 'cd to /tmp to install new package manager (yay)'
 cd /tmp
