@@ -16,5 +16,7 @@ git clone https://github.com/Danielsilveira98/my-configurations.git "$HOME/my-co
 cd ~/my-configurations
 git checkout manjaro-i3
 chmod +x ./initializing_machine.sh
-./initializing_machine.sh >> execution.log
+# ./initializing_machine.sh >> execution.log
+# or
+# ./initializing_machine.sh work >> execution.log
 ```
