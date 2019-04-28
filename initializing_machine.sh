@@ -35,6 +35,8 @@ echo '---> - go (golang)'
 yay -S community/go --noconfirm
 echo '---> - vim'
 yay -S extra/vim --noconfirm
+echo '---> - fish'
+yay -S community/fish --noconfirm
 
 echo '---> Instaling aur prograns'
 echo '---> - ulauncher'
@@ -56,7 +58,7 @@ if [ ! -z "$1" ] && [ $1 = "work" ]; then
   yay -S community/filezilla --noconfirm
   echo '---> - s3cmd'
   yay -S community/s3cmd --noconfirm
-  echo 'v- google-cloud-sdk'
+  echo '---> - google-cloud-sdk'
   yay -S aur/google-cloud-sdk --noconfirm
   echo '---> - rvm (ruby version management)'
   yay -S aur/rvm --noconfirm
@@ -67,6 +69,12 @@ if [ ! -z "$1" ] && [ $1 = "work" ]; then
   echo '---> - slack'
   yay -S aur/slack --noconfirm
 fi
+
+echo '---> Set fish as default shell'
+chsh -s /usr/bin/fish
+echo '---> install omf'
+curl -L https://get.oh-my.fish | fish
+echo '---> install shelder'
 
 echo '---> Back to path'
 echo '---> Confing environment'
@@ -83,7 +91,6 @@ echo '-----> now we can stow things!'
 stow home -R
 
 echo '-----> add bash aliases on bashrc'
-echo '. ~/.bash_aliases' >> $HOME/.bashrc
 
 echo '---> Removing original vi'
 yay -R vi --noconfirm
