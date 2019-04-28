@@ -1,17 +1,20 @@
 # Set up
 
-### This dotfile config is meant to be ran on top of a manjaro-i3 clean install.
-
-#### Optional steep
 ```
-echo 'Update pacman mirrons'
 sudo pacman-mirrors -f
-echo 'optimizar mirrors'
 sudo pacman-mirrors -g
-```
+sudo pacman -Syu
 
-#### Clone this repository, cd into it, give executable permissions to the script and run it:
-```
+#cd to /tmp to install new package manager (yay)
+cd /tmp
+# downloading yay
+git clone https://aur.archlinux.org/yay.git
+# instaling yay
+cd yay
+makepkg -si --noconfirm
+
+# back to home dir
+cd $HOME
 git clone https://github.com/Danielsilveira98/my-configurations.git "$HOME/my-configurations"
 cd ~/my-configurations
 git checkout manjaro-i3

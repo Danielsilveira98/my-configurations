@@ -1,16 +1,3 @@
-echo '---> Update system'
-sudo pacman -Syu --noconfirm
-
-echo '------> cd to /tmp to install new package manager (yay)'
-cd /tmp
-
-echo '------> downloading yay'
-git clone https://aur.archlinux.org/yay.git
-
-echo '------> instaling yay'
-cd yay
-makepkg -si --noconfirm
-
 echo '---> Install fonts'
 yay -S community/otf-fira-code --noconfirm >> $HOME/my-configurations/log/otf-fira-code.log
 
@@ -70,13 +57,6 @@ if [ ! -z "$1" ] && [ $1 = "work" ]; then
   yay -S aur/slack --noconfirm >> $HOME/my-configurations/log/slack.log
 fi
 
-echo '---> Set fish as default shell'
-chsh -s /usr/bin/fish 
-echo '---> install omf'
-curl -L https://get.oh-my.fish | fish
-echo '---> install shellder'
-omf install shellder
-
 echo '---> Back to path'
 echo '---> Confing environment'
 echo '------> cd into our my configurations dir'
@@ -91,10 +71,6 @@ git reset --hard
 echo '-----> now we can stow things!'
 stow home -R
 
-echo '-----> add bash aliases on bashrc'
-
-echo '---> Removing original vi'
-yay -R vi --noconfirm
 echo '---> DONE !'
 
 echo 'restarting...'
