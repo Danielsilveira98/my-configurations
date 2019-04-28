@@ -74,7 +74,8 @@ echo '---> Set fish as default shell'
 chsh -s /usr/bin/fish
 echo '---> install omf'
 curl -L https://get.oh-my.fish | fish
-echo '---> install shelder'
+echo '---> install shellder'
+omf install shellder
 
 echo '---> Back to path'
 echo '---> Confing environment'
