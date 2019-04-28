@@ -18,8 +18,8 @@ cd $HOME
 git clone https://github.com/Danielsilveira98/my-configurations.git "$HOME/my-configurations"
 cd ~/my-configurations
 git checkout manjaro-i3
-chmod +x ./initializing_machine.sh
-# ./initializing_machine.sh >> log/execution.log
+chmod +x ./configure.sh
+# ./configure.sh >> log/execution.log
 # or
-# ./initializing_machine.sh work >> log/execution.log
+# ./configure.sh work >> log/execution.log
 ```
