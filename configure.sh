@@ -1,12 +1,12 @@
 sudo -v
 
-echo ' ---> '
+echo ' ---> mirros -f'
 sudo pacman-mirrors -f
 
-echo ' ---> '
+echo ' ---> mirros -g'
 sudo pacman-mirrors -g
 
-echo ' ---> '
+echo ' ---> pacman -Syu'
 sudo pacman -Syu
 
 echo '---> cd to /tmp to install new package manager (yay)'
