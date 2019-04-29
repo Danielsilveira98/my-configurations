@@ -1,3 +1,22 @@
+sudo -v
+
+echo ' ---> '
+sudo pacman-mirrors -f
+
+echo ' ---> '
+sudo pacman-mirrors -g
+
+echo ' ---> '
+sudo pacman -Syu
+
+echo '---> cd to /tmp to install new package manager (yay)'
+cd /tmp
+echo '---> Downloading yay'
+git clone https://aur.archlinux.org/yay.git
+echo '---> Instaling yay'
+cd yay
+makepkg -si --noconfirm >> >> $HOME/my-configurations/log/yay.log
+
 echo '---> Install fonts'
 yay -S community/otf-fira-code --noconfirm >> $HOME/my-configurations/log/otf-fira-code.log
 
@@ -57,6 +76,16 @@ if [ ! -z "$1" ] && [ $1 = "work" ]; then
   yay -S aur/slack --noconfirm >> $HOME/my-configurations/log/slack.log
 fi
 
+echo '---> Install omf'
+curl -L https://get.oh-my.fish > install
+fish install --path=~/.local/share/omf --config=~/.config/omf
+
+echo '---> Install shelder'
+omf install shellder
+
+echo '---> Removing original vi'
+yay -R vi --noconfirm
+
 echo '---> Back to path'
 echo '---> Confing environment'
 echo '------> cd into our my configurations dir'
@@ -71,7 +100,10 @@ git reset --hard
 echo '-----> now we can stow things!'
 stow home -R
 
-echo '---> DONE !'
+echo 'restarting in five minutes'
+shutdown -r 5
 
-echo 'restarting...'
-shutdown -r 0
+echo '---> Set fish as default shell'
+chsh -s $(which fish)
+
+echo '---> DONE !'
