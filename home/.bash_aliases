@@ -39,7 +39,7 @@ alias green='ssh dito@green-lantern'
 alias kickass='ssh dito@kickass'
 alias wolwerine='ssh dito@wolwerine'
 alias sabretooth='ssh dito@sabretooth'
-alias jaspion='ssh dito@jaspion
+alias jaspion='ssh dito@jaspion'
 
 # Kubernetes
 alias kbc='kubectl'
