@@ -7,7 +7,7 @@ echo ' ---> mirros -g'
 sudo pacman-mirrors -g
 
 echo ' ---> pacman -Syu'
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 echo '---> cd to /tmp to install new package manager (yay)'
 cd /tmp
