@@ -1,0 +1,47 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  geometry_hinting = False
+  handle_size = 0
+  homogeneous_tabbar = False
+  inactive_color_offset = 1.0
+  scroll_tabbar = True
+  sticky = True
+  suppress_multiple_term_dialog = True
+  title_font = Sans 12
+  title_use_system_font = False
+[keybindings]
+  switch_to_tab_1 = <Primary>1
+  switch_to_tab_2 = <Primary>2
+  switch_to_tab_3 = <Primary>3
+[layouts]
+  [[default]]
+    [[[child1]]]
+      directory = /home/daniel/Workfolder
+      parent = window0
+      profile = None
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    alternate_screen_scroll = False
+    background_darkness = 0.86
+    background_image = None
+    copy_on_selection = True
+    foreground_color = "#ffffff"
+    login_shell = True
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollback_infinite = True
+    scrollback_lines = 2000
+  [[Work]]
+    alternate_screen_scroll = False
+    background_darkness = 0.78
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    foreground_color = "#00ff00"
+    login_shell = True
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollback_infinite = True
