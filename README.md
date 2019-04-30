@@ -1,5 +1,11 @@
 # Set up
 
+#### Optional steep
+```
+sudo pacman-mirrors -f
+```
+
+#### Copy and past on terminal
 ```
 git clone https://github.com/Danielsilveira98/my-configurations.git "$HOME/my-configurations"
 cd ~/my-configurations
