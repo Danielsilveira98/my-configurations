@@ -1,13 +1,13 @@
 sudo -v
 
 echo ' ---> mirros -f'
-sudo pacman-mirrors -f
+sudo pacman-mirrors -f >> $HOME/my-configurations/pacman-mirrors-f
 
 echo ' ---> mirros -g'
-sudo pacman-mirrors -g
+sudo pacman-mirrors -g >> $HOME/my-configurations/pacman-mirrors-g
 
 echo ' ---> pacman -Syu'
-sudo pacman -Syu --noconfirm
+sudo pacman -Syu --noconfirm >> $HOME/my-configurations/pacman-Syu
 
 echo '---> cd to /tmp to install new package manager (yay)'
 cd /tmp
@@ -15,7 +15,7 @@ echo '---> Downloading yay'
 git clone https://aur.archlinux.org/yay.git
 echo '---> Instaling yay'
 cd yay
-makepkg -si --noconfirm >> >> $HOME/my-configurations/log/yay.log
+makepkg -si --noconfirm >> $HOME/my-configurations/log/yay.log
 
 echo '---> Install fonts'
 yay -S community/otf-fira-code --noconfirm >> $HOME/my-configurations/log/otf-fira-code.log
