@@ -27,21 +27,10 @@
 [profiles]
   [[default]]
     alternate_screen_scroll = False
-    background_darkness = 0.86
+    background_darkness = 0.76
     background_image = None
     copy_on_selection = True
-    foreground_color = "#ffffff"
     login_shell = True
     palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
     scrollback_infinite = True
     scrollback_lines = 2000
-  [[Work]]
-    alternate_screen_scroll = False
-    background_darkness = 0.78
-    background_image = None
-    background_type = transparent
-    copy_on_selection = True
-    foreground_color = "#00ff00"
-    login_shell = True
-    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
-    scrollback_infinite = True
