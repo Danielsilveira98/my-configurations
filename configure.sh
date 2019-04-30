@@ -1,11 +1,5 @@
 sudo -v
 
-echo ' ---> mirros -f'
-sudo pacman-mirrors -f >> $HOME/my-configurations/pacman-mirrors-f
-
-echo ' ---> mirros -g'
-sudo pacman-mirrors -g >> $HOME/my-configurations/pacman-mirrors-g
-
 echo ' ---> pacman -Syu'
 sudo pacman -Syu --noconfirm >> $HOME/my-configurations/pacman-Syu
 
