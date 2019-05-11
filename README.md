@@ -16,6 +16,9 @@ chmod +x ./configure.sh
 # ./configure.sh work >> log/execution.log
 ```
 
+### Set fish shell as default shell
+`chsh -s $(which fish)`
+
 ### Instaling OMF
 ```
 curl -L https://get.oh-my.fish > install
