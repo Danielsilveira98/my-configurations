@@ -15,3 +15,12 @@ chmod +x ./configure.sh
 # or
 # ./configure.sh work >> log/execution.log
 ```
+
+### Instaling OMF
+```
+curl -L https://get.oh-my.fish > install
+fish install --path=~/.local/share/omf --config=~/.config/omf
+```
+
+### Instaling Shellder
+`omf install shellder`
