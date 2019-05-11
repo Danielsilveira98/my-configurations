@@ -70,13 +70,6 @@ if [ ! -z "$1" ] && [ $1 = "work" ]; then
   yay -S aur/slack --noconfirm >> $HOME/my-configurations/log/slack.log
 fi
 
-echo '---> Install omf'
-curl -L https://get.oh-my.fish > install
-fish install --path=~/.local/share/omf --config=~/.config/omf
-
-echo '---> Install shelder'
-omf install shellder
-
 echo '---> Removing original vi'
 yay -R vi --noconfirm
 
@@ -95,7 +88,7 @@ echo '-----> now we can stow things!'
 stow home -R
 
 echo 'restarting in five minutes'
-shutdown -r 5
+shutdown -r 1
 
 echo '---> Set fish as default shell'
 chsh -s $(which fish)
