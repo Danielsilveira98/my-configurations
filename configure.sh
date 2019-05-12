@@ -1,7 +1,7 @@
 sudo -v
 
 echo ' ---> Syncronize repositories'
-sudo pacman -Sy --noconfirm >> $HOME/my-configurations/pacman-Sy
+sudo pacman -Syyu --noconfirm >> $HOME/my-configurations/pacman-Sy
 
 echo '---> cd to /tmp to install new package manager (yay)'
 cd /tmp
