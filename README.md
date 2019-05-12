@@ -3,6 +3,10 @@
 ### Exec this command
 `sudo pacman-mirrors -f`
 
+
+### Syncronize repositories'
+`sudo pacman -Syyu`
+
 #### then
 
 ### Copy and past on terminal
