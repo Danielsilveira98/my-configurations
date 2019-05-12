@@ -1,8 +1,5 @@
 sudo -v
 
-echo ' ---> Syncronize repositories'
-sudo pacman -Syyu --noconfirm >> $HOME/my-configurations/pacman-Sy
-
 echo '---> cd to /tmp to install new package manager (yay)'
 cd /tmp
 echo '---> Downloading yay'
