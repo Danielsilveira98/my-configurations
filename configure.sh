@@ -34,6 +34,8 @@ echo '---> - vim'
 yay -S extra/vim --noconfirm >> $HOME/my-configurations/log/vim.log
 echo '---> - fish'
 yay -S community/fish --noconfirm >> $HOME/my-configurations/log/fish.log
+echo '---> - galculator'
+yay -S community/galculator-gtk2 --noconfirm >> $HOME/my-configurations/log/galculator.log
 
 echo '---> Instaling aur prograns'
 echo '---> - ulauncher'
