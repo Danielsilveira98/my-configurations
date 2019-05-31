@@ -71,6 +71,8 @@ fi
 
 echo '---> Removing original vi'
 yay -R vi --noconfirm
+echo '---> Removing manjaro browser settings'
+yay -R manjaro-browser-settings --noconfirm
 
 echo '---> Back to path'
 echo '---> Confing environment'
