@@ -77,7 +77,7 @@ yay -R manjaro-browser-settings --noconfirm
 echo '---> Back to path'
 echo '---> Confing environment'
 echo '------> cd into our my configurations dir'
-cd "$HOME/my-configurations"
+cd "$HOME/.my-configurations"
 
 echo '------> attempt to stow adopting files'
 stow home --adopt
@@ -87,11 +87,5 @@ git reset --hard
 
 echo '-----> now we can stow things!'
 stow home -R
-
-echo 'restarting in five minutes'
-shutdown -r 1
-
-echo '---> Set fish as default shell'
-chsh -s $(which fish)
 
 echo '---> DONE !'
