@@ -13,7 +13,7 @@
 ```
 git clone https://github.com/Danielsilveira98/my-configurations.git "$HOME/.my-configurations"
 cd ~/.my-configurations
-git checkout manjaro-i3
+git checkout manjaro
 chmod +x ./configure.sh
 # ./configure.sh
 # or
