@@ -28,6 +28,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec terminator
+bindsym Ctrl+Alt+T exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -64,9 +65,7 @@ bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print exec "flameshot gui"
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+space exec ulauncher
@@ -98,8 +97,8 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # move workspace to another output
-bindsym $mod+Alt+Left move workspace to output left
-bindsym $mod+Alt+Right move workspace to output right
+bindsym $mod+Ctrl+Shift+Left move workspace to output left
+bindsym $mod+Ctrl+Shift+Right move workspace to output right
 
 # workspace back and forth (with/without active container)
 workspace_auto_back_and_forth yes
@@ -153,7 +152,7 @@ set $ws4 4
 set $ws5 5
 set $ws6 6
 set $ws7 7
-set $ws8 8
+set $ws8 Slack
 set $ws9 Spotify
 
 # switch to workspace
@@ -190,6 +189,10 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 
 # Open applications on specific workspaces
+for_window [class="Terminator"] move to workspace $ws1
+for_window [class="Visual Studio Code"] move to workspace $ws2
+for_window [class="Google Chrome"] move to workspace $ws8
+for_window [class="Slack"] move to workspace $ws8
 for_window [class="Spotify"] move to workspace $ws9
 
 # Open specific applications in floating mode
@@ -328,6 +331,7 @@ bar {
 	i3bar_command i3bar
 	status_command i3status
 	position top
+        mode hide
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -424,3 +428,6 @@ mode "$mode_gaps_outer" {
 
 ### Display
 exec "xrandr --output HDMI1 --primary --above LVDS1"
+
+### Border
+default_border normal
