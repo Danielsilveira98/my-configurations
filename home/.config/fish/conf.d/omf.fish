@@ -8,7 +8,3 @@ source $OMF_PATH/init.fish
 
 # Load bash_aliases
 source $HOME/.bash_aliases
-
-# Add rvm on PATH
-set PATH "$PATH:$HOME/.rvm/bin"
-
