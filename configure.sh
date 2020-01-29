@@ -1,7 +1,19 @@
 sudo apt update
 
-sudo apt install snap
+sudo apt install stow
 
-sudo apt intall stow
+stow home --adopt
 
-snap install code --classic
+git reset --hard
+
+stow home -R
+
+sudp apt install
+
+sudo apt-get install fonts-powerline
+
+sudo apt install fonts-firacode
+
+sudo apt-get install software-properties-common
+
+sudo apt install docker
